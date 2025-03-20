@@ -6,7 +6,7 @@
  */
 
 /**
- * It is example of a Simple Token Sell Tax from VladimirGav
+ * It is example of a Simple Token Sell Tax from Huan Capital
  * This contract example contains the minimum number of functions required for the token to work.
  * Contract SimpleToken: Read: _decimals, decimals, _name, name, _symbol, symbol, allowance, balanceOf, totalSupply; Write:  transfer, transferFrom, approve, decreaseAllowance, increaseAllowance.
  * Contract Ownable: Read: getOwner, owner; Write:  onlyOwner: renounceOwnership, transferOwnership.
@@ -210,8 +210,8 @@ contract SimpleToken is Context, Ownable, IERC20, SwapBlock {
     string public _name;
 
     constructor() {
-        _name = "VladimirGav";
-        _symbol = "VladimirGav";
+        _name = "Huan Capital";
+        _symbol = "Huan Capital";
         _decimals = 18;
         _totalSupply = 1000000 * 1000000000000000000;
         _balances[msg.sender] = _totalSupply;
