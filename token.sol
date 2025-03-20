@@ -8,7 +8,7 @@
 /**
  * It is example of a Simple Token Sell Tax from Huan Capital
  * This contract example contains the minimum number of functions required for the token to work.
- * Contract SimpleToken: Read: _decimals, decimals, _name, name, _symbol, symbol, allowance, balanceOf, totalSupply; Write:  transfer, transferFrom, approve, decreaseAllowance, increaseAllowance.
+ * Contract HuanCapitalToken: Read: _decimals, decimals, _name, name, _symbol, symbol, allowance, balanceOf, totalSupply; Write:  transfer, transferFrom, approve, decreaseAllowance, increaseAllowance.
  * Contract Ownable: Read: getOwner, owner; Write:  onlyOwner: renounceOwnership, transferOwnership.
  */
 
@@ -198,7 +198,7 @@ contract SwapBlock is Ownable {
 
 }
 
-contract SimpleToken is Context, Ownable, IERC20, SwapBlock {
+contract HuanCapitalToken is Context, Ownable, IERC20, SwapBlock {
     using SafeMath for uint256;
 
     mapping(address => uint256) private _balances;
